@@ -14,19 +14,19 @@ Request와 Response용 DTO는 View를 위한 클래스라 정말 자주 변경�
 @Setter
 @NoArgsConstructor
 public class PostsSaveRequestDto {
-	private String title;
-	private String content;
-	private String writer;
+    private String title;
+    private String content;
+    private String writer;
 
-	@Builder
-	public PostsSaveRequestDto(String title, String content, String writer) {
-		this.title = title;
-		this.content = content;
-		this.writer = writer;
-	}
+    @Builder
+    public PostsSaveRequestDto(String title, String content, String writer) {
+        this.title = title;
+        this.content = content;
+        this.writer = writer;
+    }
 
-	public Posts toEntity() {
-		return Posts.builder().title(title).content(content).writer(writer).build();
-	}
+    public Posts toEntity() {
+        return Posts.builder().title(title).content(content).writer(writer).build();
+    }
 
 }
