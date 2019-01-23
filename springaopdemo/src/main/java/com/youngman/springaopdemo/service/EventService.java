@@ -1,4 +1,4 @@
-package com.youngman.springaopdemo;
+package com.youngman.springaopdemo.service;
 
 import org.springframework.stereotype.Service;
 

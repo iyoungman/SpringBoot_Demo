@@ -1,5 +1,6 @@
-package com.youngman.springaopdemo;
+package com.youngman.springaopdemo.service;
 
+import com.youngman.springaopdemo.PerLogging;
 import org.springframework.stereotype.Service;
 
 /**
@@ -32,8 +33,8 @@ public class SimpleEventService implements EventService {
             e.printStackTrace();
         }
         System.out.println("publish event");
+        deleteEvent();
 //        System.out.println(System.currentTimeMillis() - begin);
-
     }
 
     @Override
