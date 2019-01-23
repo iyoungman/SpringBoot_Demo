@@ -1,6 +1,5 @@
 package com.youngman.pagingdemo.Member;
 
-import com.youngman.pagingdemo.Member.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

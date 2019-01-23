@@ -19,8 +19,8 @@ import org.springframework.stereotype.Component;
 public class PerfAspect {
     Logger logger = LoggerFactory.getLogger(PerfAspect.class);
 
-//    @Around("execution(* com.youngman..*.EventService.*(..))")//포인트 컷, com.youngman 으로 시작하는 패키지에서 EventService에 있는 모든 메서드에 아래 행위를 적용한다
-    @Around("@annotation(PerLogging)")//해당 어노테이션이 메소드에만 적용 된다.
+    @Around("execution(* com.youngman..*.EventService.*(..))")//포인트 컷, com.youngman 으로 시작하는 패키지에서 EventService에 있는 모든 메서드에 아래 행위를 적용한다
+    //@Around("@annotation(PerLogging)")//해당 어노테이션이 메소드에만 적용 된다.
     public Object logPerf(ProceedingJoinPoint pjp) throws Throwable {
         long begin = System.currentTimeMillis();
         Object retVal = pjp.proceed();

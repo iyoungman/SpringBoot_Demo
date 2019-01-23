@@ -1,5 +1,6 @@
 package com.youngman.springaopdemo;
 
+import com.youngman.springaopdemo.service.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -18,6 +19,6 @@ public class AppRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         eventService.createEvent();
         eventService.publishEvnet();
-        eventService.deleteEvent();
+        //eventService.deleteEvent();
     }
 }
