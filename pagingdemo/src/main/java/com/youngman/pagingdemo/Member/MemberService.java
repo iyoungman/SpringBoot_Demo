@@ -1,7 +1,5 @@
 package com.youngman.pagingdemo.Member;
 
-import com.youngman.pagingdemo.Member.Member;
-import com.youngman.pagingdemo.Member.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
