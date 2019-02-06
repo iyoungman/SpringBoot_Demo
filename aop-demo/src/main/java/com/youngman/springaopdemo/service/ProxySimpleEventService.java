@@ -1,14 +1,10 @@
-/*
 package com.youngman.springaopdemo;
 
+import com.youngman.springaopdemo.service.EventService;
+import com.youngman.springaopdemo.service.SimpleEventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
-
-*/
-/**
- * Created by youngman on 2018-12-23.
- *//*
 
 @Primary//같은 타입의 빈이 여러개 있을 때 그중 하나를 선택하는 방법
 @Service
@@ -37,4 +33,3 @@ public class ProxySimpleEventService implements EventService {
        simpleEventService.deleteEvent();
     }
 }
-*/
