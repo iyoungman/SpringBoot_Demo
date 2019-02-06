@@ -1,6 +1,6 @@
 package com.youngman.cosmosdemo.repository;
 
-import com.youngman.cosmosdemo.model.Receiver;
+import com.youngman.cosmosdemo.model.manytoone.Receiver;
 import com.youngman.cosmosdemo.model.embedded.Name;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -9,8 +9,9 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 /**
- * Created by youngman on 2019-01-29.
+ * Created by YoungMan on 2019-01-29.
  */
+
 public interface ReceiverRepository extends JpaRepository<Receiver, Long> {
 
 //    Long findIdByName(Name name);

@@ -1,4 +1,4 @@
-package com.youngman.cosmosdemo.model;
+package com.youngman.cosmosdemo.model.manytoone;
 
 import com.youngman.cosmosdemo.model.embedded.Address;
 import com.youngman.cosmosdemo.model.embedded.Name;
@@ -10,8 +10,9 @@ import lombok.ToString;
 import javax.persistence.*;
 
 /**
- * Created by youngman on 2019-01-29.
+ * Created by YoungMan on 2019-01-29.
  */
+
 @Getter
 @Setter
 @Entity

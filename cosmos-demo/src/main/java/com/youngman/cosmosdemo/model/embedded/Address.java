@@ -9,9 +9,10 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
- * Created by youngman on 2019-01-29.
+ * Created by YoungMan on 2019-01-29.
  * @Embeddable 값 타입을 사용한다고 명시
  */
+
 @Embeddable
 @Getter
 @Setter

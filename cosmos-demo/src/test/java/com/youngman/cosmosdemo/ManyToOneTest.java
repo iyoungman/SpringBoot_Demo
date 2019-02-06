@@ -1,8 +1,8 @@
 package com.youngman.cosmosdemo;
 
-import com.youngman.cosmosdemo.model.Profile;
-import com.youngman.cosmosdemo.model.Receiver;
-import com.youngman.cosmosdemo.model.Sender;
+import com.youngman.cosmosdemo.model.manytoone.Profile;
+import com.youngman.cosmosdemo.model.manytoone.Receiver;
+import com.youngman.cosmosdemo.model.manytoone.Sender;
 import com.youngman.cosmosdemo.model.embedded.Address;
 import com.youngman.cosmosdemo.model.embedded.Name;
 import com.youngman.cosmosdemo.repository.ProfileRepository;
@@ -20,12 +20,13 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by youngman on 2019-01-29.
+ * Created by YoungMan on 2019-01-29.
  */
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CrudTest {
-    private Logger logger = LoggerFactory.getLogger(CrudTest.class);
+public class ManyToOneTest {
+    private Logger logger = LoggerFactory.getLogger(ManyToOneTest.class);
 
     @Autowired
     private ReceiverRepository receiverRepository;
@@ -85,6 +86,15 @@ public class CrudTest {
 
     @Test
     public void saveProfile() {
+       /* Name name = Name.builder()
+                .firstName("영준")
+                .lastName("리")
+                .build();
+
+        Receiver receiver = Receiver.builder()
+                .address(null)
+                .name(name)
+                .build();*/
         Receiver receiver = new Receiver();
         receiver.setId(1L);
 

@@ -1,4 +1,4 @@
-package com.youngman.cosmosdemo.model;
+package com.youngman.cosmosdemo.model.manytoone;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -8,8 +8,9 @@ import lombok.ToString;
 import javax.persistence.*;
 
 /**
- * Created by youngman on 2019-01-29.
+ * Created by YoungMan on 2019-01-29.
  */
+
 @Getter
 @Setter
 @Entity
@@ -29,7 +30,7 @@ public class Profile {
      * 프로필에 회원정보 입력
      * p137 - 단방향
      */
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Receiver receiver;
 
     public Profile() {
