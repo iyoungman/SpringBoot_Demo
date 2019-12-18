@@ -1,0 +1,8 @@
+spring:
+  h2:
+    console:
+      enabled: true
+
+#mybatis:
+#  type-aliases-package: com.youngman.mybatisdemo.account
+

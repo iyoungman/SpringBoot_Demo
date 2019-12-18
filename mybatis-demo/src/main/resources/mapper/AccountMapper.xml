@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.youngman.mybatisdemo.mapper.AccountMapper">
+
+    <select id="selectAccountById" resultType="account">
+        SELECT ID ,NAME, AGE
+          FROM ACCOUNT
+         WHERE ID = #{id}
+    </select>
+
+    <select id="selectAccounts" resultType="account">
+        SELECT ID ,NAME, AGE
+          FROM ACCOUNT
+    </select>
+
+    <insert id="insertAccount">
+      INSERT INTO ACCOUNT (NAME, AGE)
+        VALUES (#{name}, #{age})
+    </insert>
+
+</mapper>
